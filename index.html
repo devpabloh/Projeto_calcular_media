@@ -7,14 +7,16 @@
     <meta name="keywords" content="calculadora, calcular média, calc média">
     <met name="autor" content="Dev Pablo H.">
     <title>Calculadora de notas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="Imagens/SVG/pessoa_computador.svg" alt="">
-            <a href="">Home</a>
-            
-        </nav>
+        <div>
+            <h1>Calculadora de média</h1>
+        </div>
     </header>
     <main>
         <table>
@@ -29,12 +31,12 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" name="" id=""></td>
-                    <td><input type="number" name="" id=""></td>
-                    <td><input type="number" name="" id=""></td>
-                    <td><input type="number" name="" id=""></td>
-                    <td><input type="number" name="" id=""></td>
-                    <td><input type="number" name="" id=""></td>
+                    <td><input type="text" name="" id="name"></td>
+                    <td><input type="number" name="" id="nota2"></td>
+                    <td><input type="number" name="" id="nota3"></td>
+                    <td><input type="number" name="" id="nota4"></td>
+                    <td><input type="number" name="" id="nota5"></td>
+                    <td><input type="number" name="" id="media"></td>
                     <td class="situação"></td>  
                 </tr>
             </tbody>
@@ -44,6 +46,7 @@
     <footer>
 
     </footer>
+    <script src="js/calcular.js"></script>
     
 </body>
 </html>
