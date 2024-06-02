@@ -1,4 +1,5 @@
-let trHeader = document.querySelector('thead tr')
+function calcularMedia(){
+    let trHeader = document.querySelector('thead tr')
 let thsHeader = document.querySelector("th")
 let thAlunosNotas = document.querySelector("[aluno-nota]") 
 const indices_notas = {}
@@ -33,4 +34,6 @@ while(trs[x]){
     x++
 
     tds[indices_notas.media].textContent = media
+}
+
 }
