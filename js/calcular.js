@@ -9,5 +9,15 @@ Array.from(thAlunosNotas).forEach(function(th){
 })
 
 function pegarIndice(indice){
-    const th = trHeader.querySelector(`[aluno-nota]="${indice}"`)
+    const th = trHeader.querySelector(`[aluno-nota="${indice}"]
+    `)
+
+    const i = Array.prototype.indexOf.call(thsHeader, th)
+    return i
 }
+
+const trs = document.querySelectorAll("tbody tr")
+
+let x = 0
+let media = 0
+
