@@ -21,3 +21,16 @@ const trs = document.querySelectorAll("tbody tr")
 let x = 0
 let media = 0
 
+while(trs[x]){
+    const tds = trs[x].querySelectorAll('td')
+
+    media = avarege(
+        parseFloat(tds(indices_notas.n1).textContent),
+        parseFloat(tds(indices_notas.n2).textContent),
+        parseFloat(tds(indices_notas.n3).textContent),
+        parseFloat(tds(indices_notas.n4).textContent)
+    )
+    x++
+
+    tds[indices_notas.media].textContent = media
+}
